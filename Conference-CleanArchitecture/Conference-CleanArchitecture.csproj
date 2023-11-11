@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Conference_CleanArchitecture</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerApp.Core.Interfaces\CustomerApp.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\CustomerApp.Core.Models\CustomerApp.Core.Models.csproj" />
+    <ProjectReference Include="..\CustomerApp.Infrastructure.Configuration\CustomerApp.Infrastructure.Configuration.csproj" />
+    <ProjectReference Include="..\CustomerApp.Infrastructure.CosmosData\CustomerApp.Infrastructure.CosmosData.csproj" />
+    <ProjectReference Include="..\CustomerApp.Infrastructure.Logging.AppInsight\CustomerApp.Infrastructure.Logging.AppInsight.csproj" />
+    <ProjectReference Include="..\CustomerApp.Infrastructure.Logging.Onpremise\CustomerApp.Infrastructure.Logging.Onpremise.csproj" />
+    <ProjectReference Include="..\CustomerApp.Infrastructure.SQLData\CustomerApp.Infrastructure.SQLData.csproj" />
+  </ItemGroup>
+
+</Project>
